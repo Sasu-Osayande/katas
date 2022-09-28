@@ -70,10 +70,9 @@ Given a string, detect whether or not it is a pangram. Return True if it is, Fal
 /*
 3. Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number. */
 
-// function descendingOrder(n) {
-//   let numberArr = n.split(" ")
-//   let emptyArr = [];
+function descendingOrder(n) {
+  let numberArr = n.toString().split("").map(x => Number(x)).sort((a, b) => b - a)
+  return Number(numberArr.join(""));
+}
 
-//   for (let i = 0; i < n.length; i++) {
-//   }
-// }
+console.log(descendingOrder(0))
