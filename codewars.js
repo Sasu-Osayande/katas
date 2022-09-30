@@ -18,6 +18,10 @@
 
 // console.log(stringReverse("hello I am doing well today"));
 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
 /*
 2. A pangram is a sentence that contains every single letter of the alphabet at least once. For example, the sentence "The quick brown fox jumps over the lazy dog" is a pangram, because it uses the letters A-Z at least once (case is irrelevant).
 
@@ -67,12 +71,27 @@ Given a string, detect whether or not it is a pangram. Return True if it is, Fal
 
 // console.log(isPangram("The quick brown fox jumps over the lazy dog"));
 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
 /*
 3. Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number. */
 
-function descendingOrder(n) {
-  let numberArr = n.toString().split("").map(x => Number(x)).sort((a, b) => b - a)
-  return Number(numberArr.join(""));
-}
+// function descendingOrder(n) {
+//   let numberArr = n.toString().split("").map(x => Number(x)).sort((a, b) => b - a)
+//   return Number(numberArr.join(""));
+// }
 
-console.log(descendingOrder(0))
+// console.log(descendingOrder(42154));
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+4. In this kata you are required to, given a string, replace every letter with its position in the alphabet.
+
+If anything in the text isn't a letter, ignore it and don't return it.
+
+"a" = 1, "b" = 2, etc. */
