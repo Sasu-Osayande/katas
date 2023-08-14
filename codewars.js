@@ -95,3 +95,7 @@ Given a string, detect whether or not it is a pangram. Return True if it is, Fal
 If anything in the text isn't a letter, ignore it and don't return it.
 
 "a" = 1, "b" = 2, etc. */
+
+function alphabetPosition(text) {
+  return text;
+}
